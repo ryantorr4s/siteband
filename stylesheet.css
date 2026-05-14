@@ -1,0 +1,98 @@
+stylesheet.css
+/* Estilos Gerais */body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+/* Header */header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0687f5; /* Azul Bandcamp */}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Hero Section */.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+/* Album Grid - Estilo Bandcamp */.discover {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.album-grid {
+    display: grid;
+    /* Responsividade sem media queries: cards no mínimo 150px, ocupando espaço máximo */    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.album-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.album-info h3 {
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0687f5;
+}
